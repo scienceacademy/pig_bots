@@ -1,0 +1,11 @@
+def player_choice(player, score):
+
+    if player == 0:
+       if scores[0] + score >=100:
+            return False
+       if scores[1] > 85 and scores[0] + score<100 and score< 45:
+            return True
+       if score < 20:
+           return True
+       if score>20:
+           return False
