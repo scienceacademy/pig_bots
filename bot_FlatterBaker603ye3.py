@@ -24,7 +24,7 @@ def choice(round_score, my_score, opponent_score):
     else:
         fun = set_fun
 
-    if round_score < dif or round_Score < 20:
+    if round_score < dif or round_score < 20:
         if fun > random():
             if 2*(2**(-tim/4)) < random():
                 tim = 0
