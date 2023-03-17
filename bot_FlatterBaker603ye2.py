@@ -9,16 +9,21 @@ def choice(round_score, my_score, opponent_score):
     tim += 1
     dif = opponent_score - my_score
 
-    if (dif >= 20) or (dif <= -26):
+    if (dif >= 20):
+        fun += 0.055
+        if (dif >= 35):
+            fun += 0.11
+            if (dif >= 45):
+                fun += 0.22
+    elif (dif <= -26):
         fun -= 0.055
-        if (dif >= 35) or (dif <= -41):
+        if (dif <= -41):
             fun -= 0.11
-            if (dif >= 45) or (dif <= -51):
+            if (dif <= -51):
                 fun -= 0.22
     else:
         fun = set_fun
 
-        
     if round_score < 20:
         if fun > random():
             if 2*(2**(-tim/4)) < random():
