@@ -1,3 +1,5 @@
+tim = 0
+
 def choice(round_score, my_score, opponent_score):
     fun = 0.5
     set_fun = fun
